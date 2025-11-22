@@ -119,7 +119,7 @@ export function Cloud() {
               ref={connectionRef}
               className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 size-2 rounded-full bg-primary opacity-0 md:opacity-100"
             />
-            <Card className="p-6 border border-white/10 bg-black/5 backdrop-blur-xl shadow-2xl transition-all duration-300 hover:shadow-primary/20 dark:bg-white/5 dark:border-white/10">
+            <Card className="p-4 md:p-6 border border-white/10 bg-black/5 backdrop-blur-xl shadow-2xl transition-all duration-300 hover:shadow-primary/20 dark:bg-white/5 dark:border-white/10">
               <CardHeader className="pb-2">
                 <CardTitle className="capitalize text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                   {selectedSlug}
