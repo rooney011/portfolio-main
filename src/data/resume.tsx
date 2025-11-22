@@ -47,7 +47,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "www.linkedin.com/in/bvs-aneesh",
+        url: "https://www.linkedin.com/in/bvs-aneesh",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -60,7 +60,7 @@ export const DATA = {
       // },
       email: {
         name: "Send Email",
-        url: "bvsa2020@gmail.com",
+        url: "mailto:bvsa2020@gmail.com",
         icon: Icons.email,
 
         navbar: true,
