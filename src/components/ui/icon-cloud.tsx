@@ -15,13 +15,14 @@ interface Icon {
 interface IconCloudProps {
   icons?: React.ReactNode[]
   images?: string[]
+  onIconClick?: (index: number) => void
 }
 
 function easeOutCubic(t: number): number {
   return 1 - Math.pow(1 - t, 3)
 }
 
-export function IconCloud({ icons, images }: IconCloudProps) {
+export function IconCloud({ icons, images, onIconClick }: IconCloudProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [iconPositions, setIconPositions] = useState<Icon[]>([])
   const [rotation, setRotation] = useState({ x: 0, y: 0 })
@@ -154,6 +155,10 @@ export function IconCloud({ icons, images }: IconCloudProps) {
       const dy = y - screenY
 
       if (dx * dx + dy * dy < radius * radius) {
+        if (onIconClick) {
+          onIconClick(icon.id)
+        }
+
         const targetX = -Math.atan2(
           icon.y,
           Math.sqrt(icon.x * icon.x + icon.z * icon.z)

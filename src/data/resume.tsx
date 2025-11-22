@@ -27,7 +27,12 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      name: "Blog",
+      href: "https://soulscript.hashnode.dev",
+      icon: NotebookIcon,
+      label: "Blog",
+    },
   ],
   contact: {
     email: "bvsa2020@gmail.com",
@@ -58,7 +63,7 @@ export const DATA = {
         url: "bvsa2020@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -80,11 +85,13 @@ export const DATA = {
   education: [
     {
       school: "Avanthi Institute of Engineering and Technology",
-      href: "",
+      // href: "https://aietta.ac.in/",
       degree: "BTech-Computer Science Engineering",
       logoUrl: "/AVEVlogo.png",
       start: "2023",
       end: "2027",
+      description:
+        "I'm currently pursuing my BTech in Computer Science Engineering at Avanthi Institute of Engineering and Technology.",
     },
   ],
   projects: [
@@ -193,17 +200,6 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "TECHNOVA-2025",
-      dates: "September 19th - 20th, 2025",
-      location: "ANITS College, Visakhapatnam",
-      description:
-        "Developed a payments web app which eases the interface for old people ",
-      
-      image: "/anits.png",
-      mlh: "",
-      links: [],
-    },
-    {
       title: "GenAi Hackathon",
       dates: "September 15th - 16th, 2025",
       location: "Vignan's Institute of Engineering for Women, vizag",
@@ -214,6 +210,18 @@ export const DATA = {
       mlh: "",
       links: [],
     },
-    
+    {
+      title: "TECHNOVA-2025",
+      dates: "September 19th - 20th, 2025",
+      location: "ANITS College, Visakhapatnam",
+      description:
+        "Built a payments web app for elderly users with voice recognition in native languages and an integrated voice assistant. Designed a simple, high-contrast UI for effortless navigation.",
+
+      image: "/anits.png",
+      mlh: "",
+      links: [],
+    },
+
+
   ],
 } as const;

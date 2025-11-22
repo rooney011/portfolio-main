@@ -1,3 +1,5 @@
+"use client";
+
 import { Cloud } from "@/components/cloud";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -9,10 +11,16 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { AnimatedBeam } from "@/components/ui/animated-beam";
+import { useRef } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const topRef = useRef<HTMLDivElement>(null);
+  const bottomRef = useRef<HTMLDivElement>(null);
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -32,7 +40,7 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-30 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -87,12 +95,13 @@ export default function Page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
+                // href={education.href}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                description={education.description}
               />
             </BlurFade>
           ))}
@@ -104,23 +113,25 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
+            {/* {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
               </BlurFade>
-            ))}
-            <Cloud />
+            ))} */}
+            <BlurFade delay={BLUR_FADE_DELAY * 10 + DATA.skills.length * 0.05}>
+              <Cloud />
+            </BlurFade>
           </div>
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-12 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                {/* <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   My Projects
-                </div>
+                </div> */}
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
                 </h2>
@@ -155,13 +166,13 @@ export default function Page() {
         </div>
       </section>
       <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-12 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                {/* <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Hackathons
-                </div>
+                </div> */}
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Do I even like building things? Absolutely.
                 </h2>
@@ -174,33 +185,55 @@ export default function Page() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
+            <div
+              className="relative h-full w-full"
+              ref={containerRef}
+            >
+              <div
+                ref={topRef}
+                className="absolute top-0 left-4 h-4 w-px bg-transparent"
+              />
+              <div
+                ref={bottomRef}
+                className="absolute bottom-0 left-4 h-4 w-px bg-transparent"
+              />
+              <AnimatedBeam
+                containerRef={containerRef}
+                fromRef={topRef}
+                toRef={bottomRef}
+                vertical
+                curvature={0}
+                endYOffset={0}
+                startYOffset={0}
+              />
+              <ul className="mb-4 ml-4 divide-y divide-dashed border-l-0">
+                {DATA.hackathons.map((project, id) => (
+                  <BlurFade
+                    key={project.title + project.dates}
+                    delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                  >
+                    <HackathonCard
+                      title={project.title}
+                      description={project.description}
+                      location={project.location}
+                      dates={project.dates}
+                      image={project.image}
+                      links={project.links}
+                    />
+                  </BlurFade>
+                ))}
+              </ul>
+            </div>
           </BlurFade>
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-6">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              {/* <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
-              </div>
+              </div> */}
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Get in Touch
               </h2>
@@ -212,7 +245,8 @@ export default function Page() {
                 >
                   email
                 </Link>{" "}
-                I’d love to connect.I&apos;ll respond whenever I can.
+                I’d love to connect.
+                {/* I&apos;ll respond whenever I can. */}
               </p>
             </div>
           </BlurFade>
