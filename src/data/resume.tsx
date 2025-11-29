@@ -77,7 +77,7 @@ export const DATA = {
       title: "Intern",
       logoUrl: "/grafx.jpg",
       start: "Oct 2024",
-      end: "Dec 2022",
+      end: "Dec 2024",
       description:
         "I have learned Python along with key data science libraries like NumPy, Pandas, and Matplotlib. I’ve worked on multiple dataset-based projects where I performed data cleaning, analysis, and visualization to extract meaningful insights.",
     },

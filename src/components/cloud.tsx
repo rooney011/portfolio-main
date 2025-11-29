@@ -111,6 +111,9 @@ export function Cloud() {
           onIconClick={(index) => setSelectedSlug(slugs[index])}
         />
       </div>
+      <p className="text-muted-foreground text-xs text-center mt-2 md:hidden">
+        Touch the bubble to get the description
+      </p>
 
       {selectedSlug && (
         <>

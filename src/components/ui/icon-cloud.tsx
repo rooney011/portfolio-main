@@ -203,8 +203,8 @@ export function IconCloud({ icons, images, onIconClick }: IconCloudProps) {
       const deltaY = e.clientY - lastMousePos.y
 
       rotationRef.current = {
-        x: rotationRef.current.x + deltaY * 0.002,
-        y: rotationRef.current.y + deltaX * 0.002,
+        x: rotationRef.current.x + deltaY * 0.001,
+        y: rotationRef.current.y + deltaX * 0.001,
       }
 
       setLastMousePos({ x: e.clientX, y: e.clientY })
@@ -230,7 +230,7 @@ export function IconCloud({ icons, images, onIconClick }: IconCloudProps) {
       const dx = mousePos.x - centerX
       const dy = mousePos.y - centerY
       const distance = Math.sqrt(dx * dx + dy * dy)
-      const speed = 0.003 + (distance / maxDistance) * 0.01
+      const speed = 0.001 + (distance / maxDistance) * 0.005
 
       if (targetRotation) {
         const elapsed = performance.now() - targetRotation.startTime
