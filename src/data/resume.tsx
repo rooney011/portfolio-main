@@ -95,31 +95,31 @@ export const DATA = {
     },
   ],
   projects: [
-    {
-      title: "Crimson Pages",
-      href: "https://chatcollect.com",
-      dates: "",
-      active: true,
-      description:
-        "This is a simple web application for book lovers to track notes, ratings, and thoughts on books they’ve read.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "EJS",
-        "Node.js"
-      ],
-      links: [
-        {
-          type: "github",
-          href: "https://github.com/rooney011/Crimson-Pages.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "",
-    },
+    // {
+    //   title: "Crimson Pages",
+    //   href: "https://chatcollect.com",
+    //   dates: "",
+    //   active: true,
+    //   description:
+    //     "This is a simple web application for book lovers to track notes, ratings, and thoughts on books they’ve read.",
+    //   technologies: [
+    //     "HTML",
+    //     "CSS",
+    //     "JavaScript",
+    //     "EJS",
+    //     "Node.js"
+    //   ],
+    //   links: [
+    //     {
+    //       type: "github",
+    //       href: "https://github.com/rooney011/Crimson-Pages.git",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "",
+    // },
     {
       title: "Paylink",
       href: "https://chatcollect.com",
@@ -161,7 +161,7 @@ export const DATA = {
       links: [
         {
           type: "github",
-          href: "",
+          href: "https://github.com/rooney011/oss-chatbot-with-rag.git",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -189,13 +189,43 @@ export const DATA = {
         },
         {
           type: "website",
-          href: "https://portfolio-aneesh.vercel.app/projects",
+          href: "https://portfolio-aneesh.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "",
       video:
         "",
+    },
+    {
+      title: "Fincil - AI Financial Council",
+      href: "https://github.com/rooney011/Fincil.git",
+      dates: "Dec 2025 - Present",
+      active: true,
+      description:
+        "A multi-agent financial advisory platform where a 'Council' of AI personas (Miser, Visionary, Judge) debate user transactions in real-time. Features a Human-in-the-Loop negotiation interface, allowing users to rebut verdicts and force a re-evaluation of their spending choices.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Supabase",
+        "CrewAI",
+        "FastAPI",
+        // "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/rooney011/Fincil.git",
+          icon: <Icons.github className="size-3" />,
+        },
+        // {
+        //   type: "Website",
+        //   href: "https://fincil-demo.vercel.app",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+      ],
+      image: "",
+      video: "",
     },
   ],
   hackathons: [
@@ -204,7 +234,7 @@ export const DATA = {
       dates: "September 15th - 16th, 2025",
       location: "Vignan's Institute of Engineering for Women, vizag",
       description:
-        "Developed a web app that lets you send and receive stablecoin payments (USDC) as easily as sending an email or text message.",
+        "Developed a web app (PayLink) that makes payments effortless by turning any bill or request into a simple shareable link. Users can pay you instantly—no apps, no setup, just a tap. With real-time tracking and secure transactions, PayLink is the fastest way to get paid anywhere.",
       image:
         "/gdg.jpg",
       mlh: "",
@@ -221,7 +251,17 @@ export const DATA = {
       mlh: "",
       links: [],
     },
+    {
+      title: "Hogwarts Hackathon",
+      dates: "December 6th - 7th, 2025",
+      location: "Gayatri Vidya Parishad College(gvpcdpgc), visakhapatnam",
+      description:
+        "Fincil turns personal finance into an intelligent debate, not a lonely spreadsheet. A Multi-Agent AI Council—your Miser, Visionary, and Digital Twin—analyzes your income, surplus, and goals to judge every spending decision. And with our unique Negotiation Loop, you can argue your case and stay fully in control of your financial destiny.",
 
+      image: "/hogwarts.jpeg",
+      mlh: "",
+      links: [],
+    },
 
   ],
 } as const;
