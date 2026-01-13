@@ -123,7 +123,7 @@ export const DATA = {
     {
       title: "Paylink",
       href: "https://chatcollect.com",
-      dates: "",
+      dates: "Sep 2025 - Oct 2025",
       active: true,
       description:
         "A user-friendly web platform for seamless USDC transactions, enabling quick and secure stablecoin payments with an experience similar to sending a message.",
@@ -148,7 +148,7 @@ export const DATA = {
     {
       title: "Oss-Chatbot with RAG",
       href: "https://chatcollect.com",
-      dates: "",
+      dates: "Nov 2025 - Present",
       active: true,
       description:
         "Web-based chatbot application that leverages Retrieval-Augmented Generation (RAG) to provide accurate and context-aware responses using open-source documents.",
@@ -169,38 +169,38 @@ export const DATA = {
       video:
         "",
     },
-    {
-      title: "Portfolio Template",
-      href: "https://chatcollect.com",
-      dates: "",
-      active: true,
-      description:
-        "A sleek and modern portfolio template built with Next.js and Tailwind CSS, designed to showcase projects and skills effectively for developers and designers.",
-      technologies: [
-        "Next.js",
-        "Tailwind CSS",
-        "TypeScript",
-      ],
-      links: [
-        {
-          type: "github",
-          href: "https://github.com/rooney011/portfolio",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "website",
-          href: "https://portfolio-aneesh.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "",
-    },
+    // {
+    //   title: "Portfolio Template",
+    //   href: "https://chatcollect.com",
+    //   dates: "",
+    //   active: true,
+    //   description:
+    //     "A sleek and modern portfolio template built with Next.js and Tailwind CSS, designed to showcase projects and skills effectively for developers and designers.",
+    //   technologies: [
+    //     "Next.js",
+    //     "Tailwind CSS",
+    //     "TypeScript",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "github",
+    //       href: "https://github.com/rooney011/portfolio",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //     {
+    //       type: "website",
+    //       href: "https://portfolio-aneesh.vercel.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "",
+    // },
     {
       title: "Fincil - AI Financial Council",
       href: "https://github.com/rooney011/Fincil.git",
-      dates: "Dec 2025 - Present",
+      dates: "Dec 2025 - Jan 2026",
       active: true,
       description:
         "A multi-agent financial advisory platform where a 'Council' of AI personas (Miser, Visionary, Judge) debate user transactions in real-time. Features a Human-in-the-Loop negotiation interface, allowing users to rebut verdicts and force a re-evaluation of their spending choices.",
@@ -218,13 +218,41 @@ export const DATA = {
           href: "https://github.com/rooney011/Fincil.git",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "https://fincil.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "CodeWeaver",
+      href: "https://github.com/rooney011/CodeWeaver.git",
+      dates: "Dec 2025 - Jan 2026",
+      active: true,
+      description:
+        "An autonomous Site Reliability Engineering (SRE) agent that monitors applications, diagnoses critical failures using Large Language Models (LLMs), and executes remediation plans with human-in-the-loop validation.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "FastAPI",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/rooney011/CodeWeaver.git",
+          icon: <Icons.github className="size-3" />,
+        },
         // {
-        //   type: "Website",
-        //   href: "https://fincil-demo.vercel.app",
+        //   type: "website",
+        //   href: "http://localhost:3000", // Or your deployed URL
         //   icon: <Icons.globe className="size-3" />,
         // },
       ],
-      image: "",
+      image: "", // You can add a screenshot of the Mission Control here later
       video: "",
     },
   ],
@@ -232,7 +260,7 @@ export const DATA = {
     {
       title: "GenAi Hackathon",
       dates: "September 15th - 16th, 2025",
-      location: "Vignan's Institute of Engineering for Women, vizag",
+      location: "Vignan's Institute of Engineering for Women, Visakhapatnam",
       description:
         "Developed a web app (PayLink) that makes payments effortless by turning any bill or request into a simple shareable link. Users can pay you instantly—no apps, no setup, just a tap. With real-time tracking and secure transactions, PayLink is the fastest way to get paid anywhere.",
       image:
@@ -254,7 +282,7 @@ export const DATA = {
     {
       title: "Hogwarts Hackathon",
       dates: "December 6th - 7th, 2025",
-      location: "Gayatri Vidya Parishad College(gvpcdpgc), visakhapatnam",
+      location: "Gayatri Vidya Parishad College(gvpcdpgc), Visakhapatnam",
       description:
         "Fincil turns personal finance into an intelligent debate, not a lonely spreadsheet. A Multi-Agent AI Council—your Miser, Visionary, and Digital Twin—analyzes your income, surplus, and goals to judge every spending decision. And with our unique Negotiation Loop, you can argue your case and stay fully in control of your financial destiny.",
 
@@ -262,6 +290,35 @@ export const DATA = {
       mlh: "",
       links: [],
     },
-
+    {
+      title: "AI Buildathon by CrossStack",
+      dates: "December 22nd - 27th, 2025",
+      location: "ā-hub, visakhapatnam",
+      description:
+        "An autonomous Site Reliability Engineering (SRE) agent that monitors applications, diagnoses critical failures using Large Language Models (LLMs), and executes remediation plans with human-in-the-loop validation.",
+      image: "/crosstack.png",
+      mlh: "",
+      links: [],
+    },
+    {
+      title: "Google TechSprint",
+      dates: "January 3rd - 4th, 2026",
+      location: "GITAM University, Visakhapatnam",
+      description:
+        "Reconstructed Fincil, a proactive financial platform where a multi-agent AI Council debates and negotiates transactions in real-time to align daily spending with long-term wealth.",
+      image: "/gdg.jpg",
+      mlh: "",
+      links: [],
+    },
+    {
+      title: "Vibe Coding Hackathon",
+      dates: "January 5th - 6th, 2026",
+      location: "ANITS College, Visakhapatnam",
+      description:
+        "Drift is an intelligent browser extension that utilizes local AI to detect the micro-behaviors preceding distraction, proactively intervening to preserve your flow state before focus is lost.",
+      image: "/anits.png",
+      mlh: "",
+      links: [],
+    },
   ],
 } as const;
