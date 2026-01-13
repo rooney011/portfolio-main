@@ -296,7 +296,7 @@ export const DATA = {
       location: "ā-hub, visakhapatnam",
       description:
         "An autonomous Site Reliability Engineering (SRE) agent that monitors applications, diagnoses critical failures using Large Language Models (LLMs), and executes remediation plans with human-in-the-loop validation.",
-      image: "/crosstack.png",
+      image: "/crosstack.PNG",
       mlh: "",
       links: [],
     },
