@@ -11,7 +11,7 @@ export const DATA = {
     "Software Engineer turning ideas into products. Building things that solve real problems. Learning, experimenting, and sharing my journey.  ",
   summary:
     "I started my journey experimenting with small projects, and that curiosity slowly turned into a passion for creating products and exploring entrepreneurship.I enjoy solving real problems, learning new skills, and sharing my experiences online. Right now, I’m focused on growing, building, and turning ideas into something people can actually use.This portfolio is a glimpse of the journey I’m on and everything I’m excited to create next.",
-  avatarUrl: "/ane.jpeg",
+  avatarUrl: "/me.jpeg",
   skills: [
     "React",
     "Next.js",
@@ -120,31 +120,31 @@ export const DATA = {
     //   video:
     //     "",
     // },
-    {
-      title: "Paylink",
-      href: "https://chatcollect.com",
-      dates: "Sep 2025 - Oct 2025",
-      active: true,
-      description:
-        "A user-friendly web platform for seamless USDC transactions, enabling quick and secure stablecoin payments with an experience similar to sending a message.",
-      technologies: [
-        "React",
-        "MongoDB",
-        "JavaScript",
-        "EJS",
-        "Node.js"
-      ],
-      links: [
-        {
-          type: "github",
-          href: "https://github.com/rooney011/PayLink",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "",
-    },
+    // {
+    //   title: "Paylink",
+    //   href: "https://chatcollect.com",
+    //   dates: "Sep 2025 - Oct 2025",
+    //   active: true,
+    //   description:
+    //     "A user-friendly web platform for seamless USDC transactions, enabling quick and secure stablecoin payments with an experience similar to sending a message.",
+    //   technologies: [
+    //     "React",
+    //     "MongoDB",
+    //     "JavaScript",
+    //     "EJS",
+    //     "Node.js"
+    //   ],
+    //   links: [
+    //     {
+    //       type: "github",
+    //       href: "https://github.com/rooney011/PayLink",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "",
+    // },
     {
       title: "Oss-Chatbot with RAG",
       href: "https://chatcollect.com",
@@ -165,38 +165,10 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/oss-rag.PNG",
       video:
         "",
     },
-    // {
-    //   title: "Portfolio Template",
-    //   href: "https://chatcollect.com",
-    //   dates: "",
-    //   active: true,
-    //   description:
-    //     "A sleek and modern portfolio template built with Next.js and Tailwind CSS, designed to showcase projects and skills effectively for developers and designers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Tailwind CSS",
-    //     "TypeScript",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "github",
-    //       href: "https://github.com/rooney011/portfolio",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //     {
-    //       type: "website",
-    //       href: "https://portfolio-aneesh.vercel.app",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "",
-    // },
     {
       title: "Fincil - AI Financial Council",
       href: "https://github.com/rooney011/Fincil.git",
@@ -224,7 +196,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/fincil.PNG",
       video: "",
     },
     {
@@ -252,8 +224,36 @@ export const DATA = {
         //   icon: <Icons.globe className="size-3" />,
         // },
       ],
-      image: "", // You can add a screenshot of the Mission Control here later
+      image: "/codeweaver.PNG",
       video: "",
+    },
+    {
+      title: "Portfolio Template",
+      href: "https://chatcollect.com",
+      dates: "",
+      active: true,
+      description:
+        "A sleek and modern portfolio template built with Next.js and Tailwind CSS, designed to showcase projects and skills effectively for developers and designers.",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+      ],
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/rooney011/portfolio",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "website",
+          href: "https://portfolio-aneesh.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/portfoliotemp.png",
+      video:
+        "",
     },
   ],
   hackathons: [
@@ -317,6 +317,16 @@ export const DATA = {
       description:
         "Drift is an intelligent browser extension that utilizes local AI to detect the micro-behaviors preceding distraction, proactively intervening to preserve your flow state before focus is lost.",
       image: "/anits.png",
+      mlh: "",
+      links: [],
+    },
+    {
+      title: "Innovators Hackathon 2026",
+      dates: "January 22nd - 23rd, 2026",
+      location: "NMIET Campus, Pune",
+      description:
+        "BrandMatch Pro is an all-in-one creator business OS that empowers creators with auto-generated media kits, AI-driven rate cards, and deal tracking to maximize negotiating power and revenue.",
+      image: "/nmiet.jpg",
       mlh: "",
       links: [],
     },
