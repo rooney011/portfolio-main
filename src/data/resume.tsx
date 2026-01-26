@@ -251,7 +251,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/portfoliotemp.png",
+      image: "/portfoliotemp.PNG",
       video:
         "",
     },
