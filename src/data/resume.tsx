@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon, } from "lucide-react";
 export const DATA = {
   name: "Aneesh",
   initials: "BVS",
-  url: "https://dillion.io",
+  url: "https://portfolio-main-azure-eight.vercel.app",
   location: "Visakhapatnam, IN",
   locationLink: "https://www.google.com/maps/place/visakhapatnam",
   description:
@@ -81,6 +81,17 @@ export const DATA = {
       description:
         "I have learned Python along with key data science libraries like NumPy, Pandas, and Matplotlib. I’ve worked on multiple dataset-based projects where I performed data cleaning, analysis, and visualization to extract meaningful insights.",
     },
+    {
+      company: "ZigmaNeural",
+      href: "https://www.zigmaneural.com/",
+      badges: [],
+      location: "Remote",
+      title: "Intern",
+      logoUrl: "/zigmaneural.jpeg",
+      start: "Feb 2026",
+      end: "Present",
+      description: "Currently contributing to software development and AI initiatives. Gaining hands-on experience in building and optimizing tech solutions while collaborating with the team on production-level projects.",
+    }
   ],
   education: [
     {
@@ -95,56 +106,6 @@ export const DATA = {
     },
   ],
   projects: [
-    // {
-    //   title: "Crimson Pages",
-    //   href: "https://chatcollect.com",
-    //   dates: "",
-    //   active: true,
-    //   description:
-    //     "This is a simple web application for book lovers to track notes, ratings, and thoughts on books they’ve read.",
-    //   technologies: [
-    //     "HTML",
-    //     "CSS",
-    //     "JavaScript",
-    //     "EJS",
-    //     "Node.js"
-    //   ],
-    //   links: [
-    //     {
-    //       type: "github",
-    //       href: "https://github.com/rooney011/Crimson-Pages.git",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "",
-    // },
-    // {
-    //   title: "Paylink",
-    //   href: "https://chatcollect.com",
-    //   dates: "Sep 2025 - Oct 2025",
-    //   active: true,
-    //   description:
-    //     "A user-friendly web platform for seamless USDC transactions, enabling quick and secure stablecoin payments with an experience similar to sending a message.",
-    //   technologies: [
-    //     "React",
-    //     "MongoDB",
-    //     "JavaScript",
-    //     "EJS",
-    //     "Node.js"
-    //   ],
-    //   links: [
-    //     {
-    //       type: "github",
-    //       href: "https://github.com/rooney011/PayLink",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "",
-    // },
     {
       title: "Oss-Chatbot with RAG",
       href: "https://chatcollect.com",
@@ -218,11 +179,6 @@ export const DATA = {
           href: "https://github.com/rooney011/CodeWeaver.git",
           icon: <Icons.github className="size-3" />,
         },
-        // {
-        //   type: "website",
-        //   href: "http://localhost:3000", // Or your deployed URL
-        //   icon: <Icons.globe className="size-3" />,
-        // },
       ],
       image: "/codeweaver.PNG",
       video: "",
@@ -330,5 +286,14 @@ export const DATA = {
       mlh: "",
       links: [],
     },
+    {
+      title: "RIFT '26 Hackathon",
+      dates: "February 19th - 20th, 2026",
+      location: "PW Institute of Innovation, Banglore",
+      description: "Developed an Autonomous CI/CD Healing Agent that independently analyzes GitHub repositories, detects test failures, applies targeted fixes, and iterates until all tests pass with zero human intervention. The system is built on a supervisor-driven multi-agent architecture to ensure determinism, safety, explainability, and exact compliance with evaluation test cases.",
+      image: "/rift26.png",
+      mlh: "",
+      links: [],
+    }
   ],
 } as const;
