@@ -109,7 +109,7 @@ export const DATA = {
     {
       title: "Oss-Chatbot with RAG",
       href: "https://chatcollect.com",
-      dates: "Nov 2025 - Present",
+      dates: "Nov 2025 - Jan 2026",
       active: true,
       description:
         "Web-based chatbot application that leverages Retrieval-Augmented Generation (RAG) to provide accurate and context-aware responses using open-source documents.",
@@ -184,6 +184,33 @@ export const DATA = {
       video: "",
     },
     {
+    title: "AutoHeal-CI",
+    href: "https://github.com/rooney011/AutoHeal-CI",
+    dates: "Feb 2026",
+    active: true,
+    description:
+      "An autonomous AI agent that detects, diagnoses, and fixes CI/CD pipeline failures without human intervention.  Clones repositories, runs tests, classifies bugs, and generates minimal code patches using LLMs then commits and pushes the fix automatically.",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Groq",
+      "Docker",
+      "GitPython",
+    ],
+    links: [
+      {
+        type: "github",
+        href: "https://github.com/rooney011/AutoHeal-CI",
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: "/autoheal.PNG",
+    video: "",
+  },
+  {
       title: "Portfolio Template",
       href: "https://chatcollect.com",
       dates: "",
