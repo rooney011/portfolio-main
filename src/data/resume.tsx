@@ -211,6 +211,32 @@ export const DATA = {
     video: "",
   },
   {
+      title: "AgentMem",
+      href: "https://agentmem-docs.vercel.app/",
+      dates: "May 2026",
+      active: true,
+      description:
+        "A Postgres-native memory layer for AI agents that lets multi-agent systems share state without Neo4j, Redis, or Pinecone. Ships hybrid retrieval (semantic + BM25 + entity-graph), Gemini re-ranking, CRDT-based conflict resolution between concurrent writes, access grants, TTL with active sweep, BYOK encryption, and HMAC-signed webhooks exposed as TypeScript (@agentmem/sdk on npm) and Python (agentmem-py on PyPI) SDKs.",
+      technologies: [
+        "TypeScript",
+        "Python",
+        "Postgres",
+        "pgvector",
+        "Supabase",
+        "Hono",
+        "Gemini",
+        "Next.js",
+        "Nextra",
+      ],
+      links: [
+        { type: "npm",  href: "https://www.npmjs.com/package/@agentmem/sdk", icon: <Icons.npm className="size-3" /> },
+        { type: "pypi", href: "https://pypi.org/project/agentmem-py/",        icon: <Icons.python className="size-3" /> },
+        { type: "docs", href: "https://agentmem-docs-rooney011.vercel.app/",  icon: <Icons.book  className="size-3" /> },
+      ],
+      image: "/Soon.png",
+      video: "",
+    },
+  {
       title: "Portfolio Template",
       href: "https://chatcollect.com",
       dates: "",
