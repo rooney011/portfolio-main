@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, } from "lucide-react";
+import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Aneesh",
@@ -90,8 +90,9 @@ export const DATA = {
       logoUrl: "/zigmaneural.jpeg",
       start: "Feb 2026",
       end: "Present",
-      description: "Currently contributing to software development and AI initiatives. Gaining hands-on experience in building and optimizing tech solutions while collaborating with the team on production-level projects.",
-    }
+      description:
+        "Currently contributing to software development and AI initiatives. Gaining hands-on experience in building and optimizing tech solutions while collaborating with the team on production-level projects.",
+    },
   ],
   education: [
     {
@@ -107,110 +108,68 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Oss-Chatbot with RAG",
-      href: "https://chatcollect.com",
-      dates: "Nov 2025 - Jan 2026",
+      title: "APEX — Formula 1 Telemetry OS",
+      href: "https://apex-iota-hazel.vercel.app/",
+      dates: "May 2026",
       active: true,
       description:
-        "Web-based chatbot application that leverages Retrieval-Augmented Generation (RAG) to provide accurate and context-aware responses using open-source documents.",
+        "Race-engineer's telemetry OS that turns raw Formula 1 lap data into a 3D track ribbon, scrub-synced D3 charts, and exportable generative fingerprints. Ten hand-baked pole laps from 2018-2025, live OpenF1 next-session countdown, command-palette navigation.",
       technologies: [
         "Next.js",
-        "RAG",
-        "NLP",
-        "Embeddings",
-      ],
-      links: [
-        {
-          type: "github",
-          href: "https://github.com/rooney011/oss-chatbot-with-rag.git",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/oss-rag.PNG",
-      video:
-        "",
-    },
-    {
-      title: "Fincil - AI Financial Council",
-      href: "https://github.com/rooney011/Fincil.git",
-      dates: "Dec 2025 - Jan 2026",
-      active: true,
-      description:
-        "A multi-agent financial advisory platform where a 'Council' of AI personas (Miser, Visionary, Judge) debate user transactions in real-time. Features a Human-in-the-Loop negotiation interface, allowing users to rebut verdicts and force a re-evaluation of their spending choices.",
-      technologies: [
-        "React",
         "TypeScript",
-        "Supabase",
-        "CrewAI",
-        "FastAPI",
-        // "Tailwind CSS",
+        "React Three Fiber",
+        "Tailwind",
+        "D3.js",
+        "FastF1",
+        "OpenF1",
       ],
       links: [
         {
           type: "github",
-          href: "https://github.com/rooney011/Fincil.git",
+          href: "https://github.com/rooney011/Apex.git",
           icon: <Icons.github className="size-3" />,
         },
         {
           type: "Website",
-          href: "https://fincil.vercel.app",
+          href: "https://apex-iota-hazel.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/fincil.PNG",
-      video: "",
+      image: "",
+      video: "/apex.mp4",
     },
     {
-      title: "CodeWeaver",
-      href: "https://github.com/rooney011/CodeWeaver.git",
-      dates: "Dec 2025 - Jan 2026",
+      title: "Fincil Remastered",
+      href: "https://github.com/rooney011/Fincil-RE",
+      dates: "May 2026",
       active: true,
       description:
-        "An autonomous Site Reliability Engineering (SRE) agent that monitors applications, diagnoses critical failures using Large Language Models (LLMs), and executes remediation plans with human-in-the-loop validation.",
+        "A completely rebuilt Next.js 15 version of the Fincil platform. It features an AI Financial Council that debates purchase decisions via live streaming, backed by deterministic financial math, Supabase authentication, and pgvector-based retrieval-augmented generation.",
       technologies: [
         "Next.js",
         "TypeScript",
-        "FastAPI",
-        "Docker",
+        "Tailwind CSS",
+        "Supabase",
+        "Vercel AI SDK",
+        "OpenAI",
+        "Gemini"
       ],
       links: [
         {
           type: "github",
-          href: "https://github.com/rooney011/CodeWeaver.git",
+          href: "https://github.com/rooney011/Fincil-RE",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "https://fincil-re.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        }
       ],
-      image: "/codeweaver.PNG",
+      image: "/fincil-re.PNG",
       video: "",
     },
     {
-    title: "AutoHeal-CI",
-    href: "https://github.com/rooney011/AutoHeal-CI",
-    dates: "Feb 2026",
-    active: true,
-    description:
-      "An autonomous AI agent that detects, diagnoses, and fixes CI/CD pipeline failures without human intervention.  Clones repositories, runs tests, classifies bugs, and generates minimal code patches using LLMs then commits and pushes the fix automatically.",
-    technologies: [
-      "Python",
-      "FastAPI",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Groq",
-      "Docker",
-      "GitPython",
-    ],
-    links: [
-      {
-        type: "github",
-        href: "https://github.com/rooney011/AutoHeal-CI",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/autoheal.PNG",
-    video: "",
-  },
-  {
       title: "AgentMem",
       href: "https://agentmem-docs.vercel.app/",
       dates: "May 2026",
@@ -229,41 +188,143 @@ export const DATA = {
         "Nextra",
       ],
       links: [
-        { type: "npm",  href: "https://www.npmjs.com/package/@agentmem/sdk", icon: <Icons.npm className="size-3" /> },
-        { type: "pypi", href: "https://pypi.org/project/agentmem-py/",        icon: <Icons.python className="size-3" /> },
-        { type: "docs", href: "https://agentmem-docs-rooney011.vercel.app/",  icon: <Icons.book  className="size-3" /> },
+        {
+          type: "npm",
+          href: "https://www.npmjs.com/package/@agentmem/sdk",
+          icon: <Icons.npm className="size-3" />,
+        },
+        {
+          type: "pypi",
+          href: "https://pypi.org/project/agentmem-py/",
+          icon: <Icons.python className="size-3" />,
+        },
+        {
+          type: "docs",
+          href: "https://agentmem-docs-rooney011.vercel.app/",
+          icon: <Icons.book className="size-3" />,
+        },
       ],
       image: "/Soon.png",
       video: "",
     },
-  {
-      title: "Portfolio Template",
+    {
+      title: "Oss-Chatbot with RAG",
       href: "https://chatcollect.com",
-      dates: "",
+      dates: "Nov 2025 - Jan 2026",
       active: true,
       description:
-        "A sleek and modern portfolio template built with Next.js and Tailwind CSS, designed to showcase projects and skills effectively for developers and designers.",
+        "Web-based chatbot application that leverages Retrieval-Augmented Generation (RAG) to provide accurate and context-aware responses using open-source documents.",
+      technologies: ["Next.js", "RAG", "NLP", "Embeddings"],
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/rooney011/oss-chatbot-with-rag.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/oss-rag.PNG",
+      video: "",
+    },
+    // {
+    //   title: "Fincil - AI Financial Council",
+    //   href: "https://github.com/rooney011/Fincil.git",
+    //   dates: "Dec 2025 - Jan 2026",
+    //   active: true,
+    //   description:
+    //     "A multi-agent financial advisory platform where a 'Council' of AI personas (Miser, Visionary, Judge) debate user transactions in real-time. Features a Human-in-the-Loop negotiation interface, allowing users to rebut verdicts and force a re-evaluation of their spending choices.",
+    //   technologies: [
+    //     "React",
+    //     "TypeScript",
+    //     "Supabase",
+    //     "CrewAI",
+    //     "FastAPI",
+    //     // "Tailwind CSS",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "github",
+    //       href: "https://github.com/rooney011/Fincil.git",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //     {
+    //       type: "Website",
+    //       href: "https://fincil.vercel.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/fincil.PNG",
+    //   video: "",
+    // },
+    
+    {
+      title: "CodeWeaver",
+      href: "https://github.com/rooney011/CodeWeaver.git",
+      dates: "Dec 2025 - Jan 2026",
+      active: true,
+      description:
+        "An autonomous Site Reliability Engineering (SRE) agent that monitors applications, diagnoses critical failures using Large Language Models (LLMs), and executes remediation plans with human-in-the-loop validation.",
+      technologies: ["Next.js", "TypeScript", "FastAPI", "Docker"],
+      links: [
+        {
+          type: "github",
+          href: "https://github.com/rooney011/CodeWeaver.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/codeweaver.PNG",
+      video: "",
+    },
+    {
+      title: "AutoHeal-CI",
+      href: "https://github.com/rooney011/AutoHeal-CI",
+      dates: "Feb 2026",
+      active: true,
+      description:
+        "An autonomous AI agent that detects, diagnoses, and fixes CI/CD pipeline failures without human intervention.  Clones repositories, runs tests, classifies bugs, and generates minimal code patches using LLMs then commits and pushes the fix automatically.",
       technologies: [
-        "Next.js",
-        "Tailwind CSS",
+        "Python",
+        "FastAPI",
+        "React",
         "TypeScript",
+        "Tailwind CSS",
+        "Groq",
+        "Docker",
+        "GitPython",
       ],
       links: [
         {
           type: "github",
-          href: "https://github.com/rooney011/portfolio",
+          href: "https://github.com/rooney011/AutoHeal-CI",
           icon: <Icons.github className="size-3" />,
         },
-        {
-          type: "website",
-          href: "https://portfolio-aneesh.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
       ],
-      image: "/portfoliotemp.PNG",
-      video:
-        "",
+      image: "/autoheal.PNG",
+      video: "",
     },
+
+    // {
+    //   title: "Portfolio Template",
+    //   href: "https://chatcollect.com",
+    //   dates: "",
+    //   active: true,
+    //   description:
+    //     "A sleek and modern portfolio template built with Next.js and Tailwind CSS, designed to showcase projects and skills effectively for developers and designers.",
+    //   technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    //   links: [
+    //     {
+    //       type: "github",
+    //       href: "https://github.com/rooney011/portfolio",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //     {
+    //       type: "website",
+    //       href: "https://portfolio-aneesh.vercel.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/portfoliotemp.PNG",
+    //   video: "",
+    // },
   ],
   hackathons: [
     {
@@ -272,8 +333,7 @@ export const DATA = {
       location: "Vignan's Institute of Engineering for Women, Visakhapatnam",
       description:
         "Developed a web app (PayLink) that makes payments effortless by turning any bill or request into a simple shareable link. Users can pay you instantly—no apps, no setup, just a tap. With real-time tracking and secure transactions, PayLink is the fastest way to get paid anywhere.",
-      image:
-        "/gdg.jpg",
+      image: "/gdg.jpg",
       mlh: "",
       links: [],
     },
@@ -343,10 +403,11 @@ export const DATA = {
       title: "RIFT '26 Hackathon",
       dates: "February 19th - 20th, 2026",
       location: "PW Institute of Innovation, Banglore",
-      description: "Developed an Autonomous CI/CD Healing Agent that independently analyzes GitHub repositories, detects test failures, applies targeted fixes, and iterates until all tests pass with zero human intervention. The system is built on a supervisor-driven multi-agent architecture to ensure determinism, safety, explainability, and exact compliance with evaluation test cases.",
+      description:
+        "Developed an Autonomous CI/CD Healing Agent that independently analyzes GitHub repositories, detects test failures, applies targeted fixes, and iterates until all tests pass with zero human intervention. The system is built on a supervisor-driven multi-agent architecture to ensure determinism, safety, explainability, and exact compliance with evaluation test cases.",
       image: "/rift26.png",
       mlh: "",
       links: [],
-    }
+    },
   ],
 } as const;
