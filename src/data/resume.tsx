@@ -204,7 +204,7 @@ export const DATA = {
           icon: <Icons.book className="size-3" />,
         },
       ],
-      image: "/Soon.png",
+      image: "/mem1.png",
       video: "",
     },
     {
