@@ -6,25 +6,27 @@ const slugs = [
   "typescript",
   "javascript",
   "react",
-  "html5",
-  "css",
+  "nextdotjs",
+  "nestjs",
   "nodedotjs",
   "express",
-  "nextdotjs",
+  "tailwindcss",
+  "python",
   "postgresql",
+  "mongodb",
+  "prisma",
+  "redis",
   "supabase",
-  "vercel",
-  "postman",
+  "auth0",
+  "googlegemini",
+  "openai",
   "docker",
+  "vercel",
   "git",
   "github",
+  "postman",
   "figma",
-  "tailwindcss",
   "npm",
-  "python",
-  "django",
-  "mongodb",
-  "jupyter",
   "linux",
   "c",
   ];
@@ -32,31 +34,30 @@ const slugs = [
 const slugDescriptions: Record<string, string> = {
   typescript: "JavaScript with syntax for types.",
   javascript: "The programming language of the Web.",
-  java: "A high-level, class-based, object-oriented programming language.",
   react: "A JavaScript library for building user interfaces.",
-  html5: "The latest evolution of the standard that defines HTML.",
-  css3: "The latest evolution of the Cascading Style Sheets language.",
+  nextdotjs: "The React Framework for the Web.",
+  nestjs: "A progressive Node.js framework for scalable server-side apps.",
   nodedotjs: "JavaScript runtime built on Chrome's V8 JavaScript engine.",
   express: "Fast, unopinionated, minimalist web framework for Node.js.",
-  nextdotjs: "The React Framework for the Web.",
+  tailwindcss: "Rapidly build modern websites without ever leaving your HTML.",
+  python: "A programming language that lets you work quickly.",
   postgresql: "The World's Most Advanced Open Source Relational Database.",
+  mongodb: "The application data platform.",
+  prisma: "Next-generation ORM for Node.js and TypeScript.",
+  redis: "In-memory data store used as a cache, broker, and database.",
   supabase: "The Open Source Firebase Alternative.",
-  vercel: "Develop. Preview. Ship.",
-  postman: "The Collaboration Platform for API Development.",
+  auth0: "Identity platform for application builders.",
+  googlegemini: "Google's family of multimodal AI models.",
+  openai: "Maker of GPT, the LLMs powering modern AI apps.",
   docker: "Empowering App Development for Developers.",
+  vercel: "Develop. Preview. Ship.",
   git: "Distributed version control system.",
   github: "Where the world builds software.",
-  visualstudiocode: "Code editing. Redefined.",
+  postman: "The Collaboration Platform for API Development.",
   figma: "The collaborative interface design tool.",
-  tailwindcss: "Rapidly build modern websites without ever leaving your HTML.",
   npm: "The package manager for JavaScript.",
-  python: "A programming language that lets you work quickly.",
-  django: "The Web framework for perfectionists with deadlines.",
-  mongodb: "The application data platform.",
-  jupyter: "Interactive computing across all programming languages.",
   linux: "Open source operating system.",
   c: "A general-purpose, procedural computer programming language.",
-  cpp: "A general-purpose programming language created by Bjarne Stroustrup.",
 };
 
 export function Cloud() {
@@ -101,7 +102,9 @@ export function Cloud() {
   return (
     <div
       ref={containerRef}
-      className="relative flex w-full flex-col items-center justify-center md:flex-row md:justify-between gap-8 p-4"
+      className={`relative flex w-full flex-col items-center justify-center md:flex-row gap-8 p-4 ${
+        selectedSlug ? "md:justify-between" : "md:justify-center"
+      }`}
     >
       <div
         className="relative flex size-full max-w-lg items-center justify-center overflow-visible"
@@ -112,8 +115,8 @@ export function Cloud() {
           onIconClick={(index) => setSelectedSlug(slugs[index])}
         />
       </div>
-      <p className="text-muted-foreground text-xs text-center mt-2 md:hidden">
-        Touch the bubble to get the description
+      <p className="text-muted-foreground text-[10px] text-center mt-2 md:absolute md:bottom-1 md:left-1/2 md:-translate-x-1/2 md:mt-0">
+        Click an icon to view details
       </p>
 
       {selectedSlug && (
